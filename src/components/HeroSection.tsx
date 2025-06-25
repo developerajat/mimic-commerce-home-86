@@ -1,6 +1,7 @@
 
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SearchDialog from "@/components/SearchDialog";
 
 const HeroSection = () => {
   return (
@@ -30,9 +31,11 @@ const HeroSection = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </button>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 ml-2 rounded-lg font-medium">
-              Search
-            </Button>
+            <SearchDialog>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 ml-2 rounded-lg font-medium">
+                Search
+              </Button>
+            </SearchDialog>
           </div>
         </div>
       </div>
