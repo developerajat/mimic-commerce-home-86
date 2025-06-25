@@ -3,11 +3,12 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import PromoBanner from "@/components/PromoBanner";
 import ProductSection from "@/components/ProductSection";
+import ChatButton from "@/components/ChatButton";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white font-figtree">
       <Header />
       <HeroSection />
       <PromoBanner />
@@ -21,6 +22,7 @@ const Index = () => {
       <ProductSection 
         title="Based on Your Recent Searches" 
       />
+      <ChatButton />
       <Footer />
     </div>
   );

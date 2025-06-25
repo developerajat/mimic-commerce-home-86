@@ -8,14 +8,37 @@ interface ProductSectionProps {
 
 const ProductSection = ({ title, subtitle }: ProductSectionProps) => {
   const products = [
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
-    { title: "Mother Dairy Toned Milk", price: "₹35", rating: 5, reviews: 3 },
+    { 
+      title: "Mother Dairy Toned Milk", 
+      price: "₹35", 
+      weight: "500ml",
+      deliveryTime: "8 mins",
+      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop"
+    },
+    { 
+      title: "Coca Cola Soft Drink", 
+      price: "₹45", 
+      weight: "750ml",
+      deliveryTime: "8 mins"
+    },
+    { 
+      title: "Lays Classic Salted Chips", 
+      price: "₹20", 
+      weight: "52g",
+      deliveryTime: "10 mins"
+    },
+    { 
+      title: "Britannia Good Day Biscuits", 
+      price: "₹25", 
+      weight: "75g",
+      deliveryTime: "8 mins"
+    },
+    { 
+      title: "Maggi 2-Minute Noodles", 
+      price: "₹14", 
+      weight: "70g",
+      deliveryTime: "12 mins"
+    }
   ];
 
   return (
@@ -30,14 +53,15 @@ const ProductSection = ({ title, subtitle }: ProductSectionProps) => {
         </button>
       </div>
       
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {products.map((product, index) => (
           <ProductCard
             key={index}
             title={product.title}
             price={product.price}
-            rating={product.rating}
-            reviews={product.reviews}
+            weight={product.weight}
+            deliveryTime={product.deliveryTime}
+            image={product.image}
           />
         ))}
       </div>
