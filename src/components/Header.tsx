@@ -1,5 +1,5 @@
 
-import { Search, ShoppingCart } from "lucide-react";
+import { Search, ShoppingCart, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -10,8 +10,13 @@ const Header = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <span className="font-bold text-blue-600 text-lg">NaturalShop</span>
-            <span className="text-gray-700">Delivery in 8 minutes</span>
-            <span className="text-gray-700">Select Location</span>
+            <div className="flex flex-col">
+              <span className="text-gray-700 font-bold">Delivery in 8 minutes</span>
+              <div className="flex items-center cursor-pointer hover:text-gray-900 transition-colors">
+                <span className="text-gray-600 text-xs">Select Location</span>
+                <ChevronDown className="w-3 h-3 ml-1 text-gray-600" />
+              </div>
+            </div>
           </div>
           <div className="flex items-center space-x-4">
             <button className="text-gray-700 hover:text-gray-900 transition-colors">

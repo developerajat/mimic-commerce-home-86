@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const PromoBanner = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 rounded-lg shadow-sm border overflow-hidden relative">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 rounded-lg shadow-sm border overflow-hidden relative pr-4">
         <div className="flex items-center">
           <div className="flex-1 p-8 z-10 relative">
             <h2 className="text-3xl font-bold text-white mb-3">
@@ -22,7 +22,7 @@ const PromoBanner = () => {
             <img 
               src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=200&fit=crop" 
               alt="FMCG Products" 
-              className="w-full h-full object-cover rounded-r-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         </div>
