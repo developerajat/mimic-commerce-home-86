@@ -25,6 +25,7 @@ const Footer = () => {
               <li><a href="#" className="text-white hover:text-gray-300 transition-colors">About Us</a></li>
               <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Contact Us</a></li>
               <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Help & Support</a></li>
+              <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Return Policy</a></li>
               <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Terms & Conditions</a></li>
             </ul>

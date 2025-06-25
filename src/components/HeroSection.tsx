@@ -7,8 +7,8 @@ const HeroSection = () => {
     <section className="bg-white py-16">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h1 className="text-5xl font-bold mb-6">
-          <span className="text-blue-600 font-bold">Find What You Need,</span>{" "}
-          <span className="text-black">Just Describe It</span>
+          <span className="text-black font-bold">Find What You Need,</span>{" "}
+          <span className="text-blue-600">Just Describe It</span>
         </h1>
         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
           Use natural language to search—no more guessing the right keywords. Say it your way, we'll find it.
@@ -19,7 +19,7 @@ const HeroSection = () => {
             <Search className="text-gray-400 w-5 h-5 mr-3" />
             <input
               type="text"
-              placeholder="Search for products..."
+              placeholder="e.g., 'gluten-free chips for kids under ₹100'"
               className="flex-1 py-4 outline-none text-gray-700 text-base"
             />
           </div>

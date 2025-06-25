@@ -34,7 +34,7 @@ const ProductCard = ({ title, price, weight, deliveryTime, image }: ProductCardP
         <p className="text-gray-500 text-xs">{weight}</p>
         
         <div className="flex items-center justify-between pt-2">
-          <span className="text-lg font-bold text-gray-900">{price}</span>
+          <span className="text-sm font-medium text-gray-900">{price}</span>
           <Button 
             variant="outline"
             className="text-blue-600 border-gray-300 hover:bg-blue-50 text-xs px-3 py-1 h-8 font-semibold"

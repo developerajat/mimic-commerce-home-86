@@ -9,7 +9,7 @@ const Header = () => {
       <div className="bg-gray-100 border-b border-gray-200 py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
-            <span className="font-semibold text-gray-900">NaturalShop</span>
+            <span className="font-bold text-blue-600 text-lg">NaturalShop</span>
             <span className="text-gray-700">Delivery in 8 minutes</span>
             <span className="text-gray-700">Select Location</span>
           </div>
